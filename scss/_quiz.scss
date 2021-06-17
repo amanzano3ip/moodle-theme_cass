@@ -153,10 +153,13 @@
   font-size: inherit;
 }
 
+/* 3IPUNT: Update */
 .que.multichoice .answer div.r0,
 .que.multichoice .answer div.r1 {
   padding: .3em 0 0.3em 40px !important;
+  /*
   text-indent: -40px;
+   */
 }
 
 div#mod_quiz_navblock {
@@ -420,4 +423,20 @@ h3.qtype {
       background-color: transparent;
     }
   }
+}
+
+/* 3IPUNT UPDATE */
+body#page-mod-quiz-attempt #region-main #responseform h3.qtype {
+  display: none;
+}
+
+#page-mod-quiz-attempt .progress,
+#page-mod-quiz-attempt .dndupload-progress-outer,
+#page-mod-quiz-review .progress,
+#page-mod-quiz-review .dndupload-progress-outer {
+  flex-direction: column;
+  color: $gray-dark;
+  font-family: $font-family-feature;
+  font-size: 25px;
+  line-height: initial;
 }
