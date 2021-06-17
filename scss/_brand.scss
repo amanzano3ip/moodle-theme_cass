@@ -927,6 +927,7 @@ iframe {
     font-family: $font-family-sans-serif;
     color: $text-color;
     float: left;
+    max-width: 11em;
   }
 }
 .section li.snap-asset .activityinstance .snap-asset-link a {
