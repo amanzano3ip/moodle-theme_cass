@@ -179,7 +179,7 @@ body#page-course-view-weeks button {
 }
 
 #snap-course-wrapper .course-content h4.snap-asset-link a {
-  color: #333;
+  color: #333 !important;
 }
 
 h4.snap-asset-link {
@@ -341,6 +341,12 @@ a.snap-assignment-stage.label.label-warning {
 
 /* 3IPUNT UPDATE */
 .theme-snap a:not(.btn):not(.dropdown-item):not(.badge-info):not(._blanktarget):not(.snap-due-date):not(.yui3-button):not(.mast-breadcrumb):not(.active):not(.disabled):not(.dimmed),
-.theme-snap .btn-link, .theme-snap .fake-link {
-  color: $brand-primary !important;
+.theme-snap .btn-link,
+.theme-snap .fake-link {
+  color: $brand-primary;
+}
+
+#page-course-view-weeks h2.sectionname {
+  font-family: $font-family-base;
+  font-weight: normal;
 }
