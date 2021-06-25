@@ -1677,7 +1677,12 @@ span.loading-icon {
 }
 
 /* 3IPUNT UPDATE */
-#mr-nav .snap-icon-menu a#admin-menu-trigger {
+
+#mr-nav .snap-icon-menu {
   position: relative;
-  top: -2px;
+  top: 4px;
+  a#admin-menu-trigger {
+    position: relative;
+    top: -2px;
+  }
 }
