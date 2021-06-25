@@ -1681,6 +1681,10 @@ span.loading-icon {
 #mr-nav .snap-icon-menu {
   position: relative;
   top: 4px;
+  .hidden-xs-down {
+    position: relative;
+    top: -2px;
+  }
   a#admin-menu-trigger {
     position: relative;
     top: -2px;

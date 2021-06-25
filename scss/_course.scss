@@ -351,3 +351,10 @@ a.snap-assignment-stage.label.label-warning {
   font-family: $font-family-base;
   font-weight: normal;
 }
+
+.snap-activity.draft .activityinstance .snap-asset-link>a {
+  display: inline !important;
+  >span.instancename {
+    color: $text-color;
+  }
+}
