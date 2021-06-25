@@ -36,6 +36,36 @@
     font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
 }
 
+/* 3IPUNT UPDATE */
+
+td {
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  font-variant-numeric: lining-nums tabular-nums;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+  font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+}
+.fraction {
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  font-variant-numeric: diagonal-fractions;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt", "frac";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt", "frac";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "frac";
+  font-feature-settings: "kern", "liga", "clig", "calt", "frac";
+}
+.fn {
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  font-variant-position: sub;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt", "subs";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt", "subs";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "subs";
+  font-feature-settings: "kern", "liga", "clig", "calt", "subs";
+}
+
 // -------------------------
 //  Activities - Create a faux page header.
 // -------------------------
@@ -794,6 +824,12 @@ div.feedback_item_box_left div.feedback_item_presentation_left {
 }
 
 @media screen and (max-width: 940px) {
+
+  .activity-meta {
+    display: flex;
+    flex-direction: column;
+  }
+
   .activity-intro {
     float: left;
   }
@@ -805,17 +841,19 @@ div.feedback_item_box_left div.feedback_item_presentation_left {
     border-bottom: none;
     width: initial;
     float: left;
-    padding-right: 1em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
   .activity-info {
     float: left;
   }
 
   .activity-time {
-    padding: 0 0 1em;
+    padding: 0 0 1.5em !important;
   }
   .activity-type .activity-info:after {
-    content: "|";
+    content: "";
     padding: 0 1em;
   }
   #intro.generalbox {
@@ -1636,4 +1674,10 @@ span.loading-icon {
     padding: 1rem;
     margin-bottom: 1rem;
     border-top: 5px solid $brand-info;
+}
+
+/* 3IPUNT UPDATE */
+#mr-nav .snap-icon-menu a#admin-menu-trigger {
+  position: relative;
+  top: -2px;
 }

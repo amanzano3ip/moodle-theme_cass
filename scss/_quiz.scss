@@ -139,13 +139,15 @@
     animation: fadein 2s forwards;
   }
 
+  /* TRE**/
   #moodle-blocks {
     max-width: 300px;
-    display: inline-block;
+    display: none;
     float: left;
     padding: 0 0 0 40px;
     height: 0;
     text-align: left;
+
   }
 }
 
@@ -368,6 +370,7 @@ h3.qtype {
     color: $gray-dark;
   }
 
+  /* 3IPUNT UPDATE */
   table.generaltable.generalbox.quizreviewsummary:before {
     content: "Quiz results";
     font-size: 52px;
@@ -376,6 +379,7 @@ h3.qtype {
     padding-bottom: .4em;
     margin-left: -2px;
     font-family: $font-family-feature;
+    text-align: left;
   }
   .specificfeedback {
     display: none;
