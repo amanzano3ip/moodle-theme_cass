@@ -1184,6 +1184,12 @@ span.activity-complete.glyphicon.glyphicon-ok, .boxStyle .activity-complete.fa-c
   -moz-font-feature-settings: 'lnum';
   font-feature-settings: 'lnum';
   text-align: left;
+  .fa-check:before {
+    content: "\f00c";
+    position: relative;
+    left: -2px;
+    top: 0;
+  }
 }
 
 .done {

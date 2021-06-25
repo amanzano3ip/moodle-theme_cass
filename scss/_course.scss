@@ -352,9 +352,20 @@ a.snap-assignment-stage.label.label-warning {
   font-weight: normal;
 }
 
-.snap-activity.draft .activityinstance .snap-asset-link>a {
-  display: inline !important;
-  >span.instancename {
-    color: $text-color;
+.snap-activity.draft {
+  .stepper-future {
+    display: none;
+  }
+  .snap-asset-link {
+    display: none;
+  }
+  .activityinstance {
+    .snap-asset-link>a {
+      display: inline !important;
+      padding-left: 0;
+      >span.instancename {
+        color: $text-color;
+      }
+    }
   }
 }
