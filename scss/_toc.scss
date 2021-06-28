@@ -73,6 +73,7 @@ a.chapter-title {
 // -------------------------
 #page-header {
   // Specific styles for numbered chapters to improve readability.
+  #page-course-view-topics ol.chapters li,
   #page-course-view-weeks ol.chapters li {
     margin-left: 2em;
     list-style-type: decimal;

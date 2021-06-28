@@ -1,0 +1,11 @@
+/* 3IPUNT UPDATE */
+#page-mod-assign-grading {
+  .gradingtable {
+    .no-overflow {
+      transform: rotateX(180deg);
+      .generaltable {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+}
