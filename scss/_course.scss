@@ -179,7 +179,7 @@ body#page-course-view-weeks button {
 }
 
 #snap-course-wrapper .course-content h4.snap-asset-link a {
-  color: #333;
+  color: #333 !important;
 }
 
 h4.snap-asset-link {
@@ -219,7 +219,7 @@ h4.snap-asset-link {
   color: #fff;
   background: $brand-info;
   font-size: .7em;
-  font-family: $font-family-monospace;
+  font-family: $font-family-feature;
   @include lining;
 }
 // Diffent background colour for the steppers.
@@ -336,5 +336,36 @@ a.snap-assignment-stage.label.label-warning {
 
   li.snap-visible-section {
     background: #eee;
+  }
+}
+
+/* 3IPUNT UPDATE */
+.theme-snap a:not(.btn):not(.dropdown-item):not(.badge-info):not(._blanktarget):not(.snap-due-date):not(.yui3-button):not(.mast-breadcrumb):not(.active):not(.disabled):not(.dimmed),
+.theme-snap .btn-link,
+.theme-snap .fake-link {
+  color: $brand-primary;
+}
+
+#page-course-view-topics h2.sectionname,
+#page-course-view-weeks h2.sectionname {
+  font-family: $font-family-base;
+  font-weight: normal;
+}
+
+.snap-activity.draft {
+  .stepper-future {
+    display: none;
+  }
+  .snap-asset-link {
+    display: none;
+  }
+  .activityinstance {
+    .snap-asset-link>a {
+      display: inline !important;
+      padding-left: 0;
+      >span.instancename {
+        color: $text-color;
+      }
+    }
   }
 }
