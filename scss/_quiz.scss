@@ -159,9 +159,7 @@
 .que.multichoice .answer div.r0,
 .que.multichoice .answer div.r1 {
   padding: .3em 0 0.3em 40px !important;
-  /*
-  text-indent: -40px;
-   */
+  text-indent: initial;
 }
 
 div#mod_quiz_navblock {
