@@ -127,8 +127,6 @@ body.hsforum-type-single #page.firstactivityinsection {
 }
 
 /* 3IPUNT UPDATE */
-#page-mod-feedback-view {
-    #region-main {
-        max-width: 60.5em;
-    }
+body.path-mod.pagelayout-incourse section#region-main {
+    max-width: 48.5em;
 }

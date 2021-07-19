@@ -2009,10 +2009,12 @@ body.sub-theme-cass #region-main {
   }
 }
 
+/* 3IP UPDATE border-right */
 .course-content ul {
   .section li.snap-asset {
     border-top: 0;
     border-bottom: 0;
+    border-right: 0;
     .asset-wrapper .activityinstance {
       padding: 0 2.2em 1em;
     }

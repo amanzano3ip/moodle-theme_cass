@@ -124,7 +124,7 @@ td {
 
 
 .text-success small {
-  background: #E2CC00;
+  background: $brand-success;
   color: white;
   border-radius: 10px;
   padding: 0 1em;
@@ -204,7 +204,7 @@ input[type="reset"]:not(.btn-link),
 
 
 .text-success small {
-  background: #E2CC00;
+  background: $brand-success;
   color: white;
   border-radius: 10px;
   padding: 0 1em;
@@ -1303,7 +1303,7 @@ h4.snap-asset-link.snap-activity-current {
     margin: .55em auto .2em;
     float: none;
     display: block;
-    background: #e2cc00;
+    background: $brand-success;
   }
 }
 
@@ -1695,4 +1695,8 @@ span.loading-icon {
     position: relative;
     top: -2px;
   }
+}
+
+.theme-snap .que {
+  border-bottom: none !important;
 }
