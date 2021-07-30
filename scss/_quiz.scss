@@ -140,9 +140,10 @@
   }
 
   /* TRE**/
+  /* UPDATE 3IP */
   #moodle-blocks {
     max-width: 300px;
-    display: none;
+    /*display: none;*/
     float: left;
     padding: 0 0 0 40px;
     height: 0;
@@ -162,11 +163,13 @@
   text-indent: initial;
 }
 
-div#mod_quiz_navblock {
-  display: none;
+#page-mod-quiz-attempt.theme-snap #mod_quiz_navblock,
+#page-mod-quiz-review.theme-snap #mod_quiz_navblock {
+  display: none !important;
 }
-span#mod_quiz_navblock_title {
-  display: none;
+#page-mod-quiz-attempt.theme-snap #mod_quiz_navblock_title ,
+#page-mod-quiz-review.theme-snap #mod_quiz_navblock_title {
+  display: none !important;
 }
 
 /**
