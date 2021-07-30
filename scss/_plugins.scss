@@ -104,7 +104,7 @@ a#snap-home {
  */
 body.hsforum-type-single #page.firstactivityinsection {
     .hsuforum-thread-title {
-        background-color: #8f182e;
+        background-color: $brand-primary;
         width: 100vw;
         position: relative;
         left: 50%;
@@ -115,7 +115,7 @@ body.hsforum-type-single #page.firstactivityinsection {
         flex-direction: column;
     }
     .hsuforum-thread-title h4 {
-        color: white;
+        color: white !important;
         font-size: 2rem;
         font-family: "ff-meta-serif-web-pro",Georgia,"Times New Roman",Times,serif;
         width: 100%;

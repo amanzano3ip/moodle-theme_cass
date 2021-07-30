@@ -5,13 +5,19 @@
     <span class="activity-complete-text">{{#str}}activitycomplete, theme_cass{{/str}}</span>
 </span>
 
+<script>
+    function completionModalClose() {
+        $('#activitycompletemodal').attr("style", "display: inline !important");
+    }
+</script>
+
 <div class="modal fade activitycompletemodal" id="activitycompletemodal" role="dialog">
     <!-- Modal content -->
     <div class="modal-content activitycompletemodal-content">
         <div class="modal-body activitycompletemodal-body moodle-dialogue-base">
-            <span class="yui3-widget-buttons">
-                <button class="yui3-button closebutton completeclose" data-dismiss="modal"></button>
-            </span>
+            <button type="button" onclick="completionModalClose()" id="activitycompletemodalclose" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
             <h4 class="modal-title activitycompletemodal-title">{{#str}}continuenextactivity, theme_cass{{/str}}</h4>
             <p>{{completiontext}}</p>
             <span class="activitycompletenextmodname">{{forwardlinkname}}</span>
