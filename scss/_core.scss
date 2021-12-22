@@ -1958,9 +1958,13 @@ label .m-l-1 {
   margin-left: 0rem !important;
 }
 
-.othernav,
-#page-mod-quiz-review #moodle-blocks {
+/* UPDATE 3&PUNT 21/12/21 */
+.othernav {
   display: none;
+}
+
+#page-mod-quiz-review #moodle-blocks {
+  display: block;
 }
 
 #page-course-view-topics ol.chapters li:first-child,

@@ -52,3 +52,29 @@
       display: none;
     }
 }
+
+/* 3&PUNT 21/12/21 */
+.snap-activity.hsuforum .snap-media-object a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .snap-media-body {
+        text-align: center;
+        margin-top: 8px;
+        span.snap-media-meta {
+            text-align: center;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            display: flex !important;
+            time {
+                margin: 2px !important;
+            }
+        }
+    }
+}
+
+.hsuforum-thread p {
+    hyphens: manual;
+}
