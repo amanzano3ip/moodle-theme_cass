@@ -23,11 +23,11 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2018080812;
+$plugin->version   = 2021122200;
 $plugin->requires  = 2018051700;
-$plugin->release   = '3.8.0';
+$plugin->release   = '3.8.1';
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->component = 'theme_cass';
 $plugin->dependencies = [
-    'theme_snap' => '2018080811'
+    'theme_snap' => '2020061103'
 ];
